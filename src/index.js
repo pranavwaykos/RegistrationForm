@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Widget from "./component/Widget";
+import App from './App'
 
-function App() {
-  return (
-    <div className="App">
-      <Widget />
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(
+  <React.StrictMode>
+    <App/>  
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
